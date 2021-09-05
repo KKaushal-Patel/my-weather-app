@@ -61,8 +61,8 @@ const Weather = () => {
   // we can do that by using the useEffect Hook
   useEffect(() => {
     getWeatherInfo();
-    document.title = `${searchValue}`;
-  });
+    document.title = `City: ${searchValue}`;
+  }, []);
 
   return (
     <>
