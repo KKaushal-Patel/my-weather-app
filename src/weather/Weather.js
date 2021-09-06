@@ -33,7 +33,7 @@ const Weather = () => {
       const { name, visibility } = data;
       // console.log(name);
       const { speed } = data.wind;
-      console.log(speed);
+      // console.log(speed);
 
       const { country } = data.sys;
       //       console.log(country, sunset);
@@ -62,7 +62,6 @@ const Weather = () => {
 
   useEffect(() => {
     getWeatherInfo();
-    document.title = `City: ${searchValue}`;
   }, []);
 
   return (
