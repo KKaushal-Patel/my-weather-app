@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import WeatherWidget from "./WeatherWidget";
 
 const Weather = () => {
-  const [searchValue, setSearchValue] = useState("delhi");
+  const [searchValue, setSearchValue] = useState("Ahmedabad");
   const [tempInfo, setTempInfo] = useState({});
 
   // They consist of two main keywords- async and await. async is used to make a function asynchronous.
@@ -59,6 +59,7 @@ const Weather = () => {
 
   // we want to show data by default for the first time without users search
   // we can do that by using the useEffect Hook
+
   useEffect(() => {
     getWeatherInfo();
     document.title = `City: ${searchValue}`;
